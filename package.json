@@ -1,6 +1,6 @@
 {
   "name": "poly-to-pslg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert a polygon into a planar straight line graph",
   "main": "poly-to-pslg.js",
   "directories": {
