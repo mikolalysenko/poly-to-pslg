@@ -34,9 +34,10 @@ function polygonToPSLG(loops, options) {
   var edges = []
   for(var i=0; i<loops.length; ++i) {
     var loop = loops[i]
+    var offset = points.length
     for(var j=0; j<loop.length; ++j) {
       points.push(loop[j])
-      edges.push([ j, (j+1)%loop.length ])
+      edges.push([ offset+j, offset+(j+1)%loop.length ])
     }
   }
 
